@@ -1,0 +1,60 @@
+<div class="activity-global-container">
+  <div class="activity-container">
+    <mat-accordion class="expansion-container">
+      <mat-expansion-panel
+        [expanded]="false"
+        (expandedChange)="experienceExpanded($event)"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title class="activity-header">
+            Professional Experience
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <resume-activity-content
+          [roles]="professionalExperience"
+        ></resume-activity-content>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion class="expansion-container">
+      <mat-expansion-panel
+        [expanded]="false"
+        (expandedChange)="diplomaExpanded($event)"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title class="activity-header">Diplomas </mat-panel-title>
+          <mat-panel-description> </mat-panel-description>
+        </mat-expansion-panel-header>
+        <resume-activity-content
+          [roles]="diplomas"
+        ></resume-activity-content> </mat-expansion-panel
+    ></mat-accordion>
+  </div>
+  <div class="activity-container">
+    <mat-accordion class="expansion-container">
+      <mat-expansion-panel
+        [expanded]="false"
+        (expandedChange)="internshipExpanded($event)"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title class="activity-header"> Projects </mat-panel-title>
+        </mat-expansion-panel-header>
+        <resume-activity-content
+          [roles]="internships"
+        ></resume-activity-content>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion class="expansion-container">
+      <mat-expansion-panel
+        [expanded]="false"
+        (expandedChange)="trainingExpanded($event)"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title class="activity-header">
+            Certificates
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <resume-activity-content [roles]="trainings"></resume-activity-content>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>

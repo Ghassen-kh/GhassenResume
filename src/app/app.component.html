@@ -1,0 +1,78 @@
+<div class="warning-message">
+  <div>Please open the website on your laptop, Thank you!</div>
+</div>
+
+<div class="website-container">
+  <div class="website-side-nav">
+    <div style="flex: 0.4; display: flex; justify-content: center">
+      <div class="website-photo">
+        <img class="photo-img" src="assets/ghassen.jpg" />
+      </div>
+    </div>
+    <div style="flex: auto; display: flex; flex-direction: column">
+      <div
+        style="
+          flex: auto;
+
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            font-size: x-large;
+            font-weight: 500;
+            color: rgb(103, 226, 103);
+          "
+        >
+          <span style="margin-top: 20px">Ghassen Khalouaoui</span>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            color: rgb(86, 104, 86);
+          "
+        >
+          <span style="margin-top: 20px">Web development engineer</span>
+        </div>
+      </div>
+      <div class="links-container">
+        <a routerLink="home" routerLinkActive="selected-link">
+          <span>Home</span>
+        </a>
+        <a routerLink="about" routerLinkActive="selected-link">
+          <span>About me</span>
+        </a>
+        <a routerLink="activity" routerLinkActive="selected-link">
+          <span>What I do</span>
+        </a>
+        <a routerLink="resume" routerLinkActive="selected-link">
+          <span>Resume</span>
+        </a>
+        <a routerLink="portfolio" routerLinkActive="selected-link">
+          <span>Achievements</span>
+        </a>
+        <a routerLink="contacts" routerLinkActive="selected-link">
+          <span>Contacts</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-icons">
+      <a href="https://linkedin.com/in/ghassen-khalouaoui/" target="_blank"
+        ><div style="width: 20px; height: 20px; padding: 0 10px 10px 10px">
+          <img src="assets/linkedin.png" alt="" /></div
+      ></a>
+      <a href="https://www.facebook.com/khalouaoui.ghassen" target="_blank"
+        ><div style="height: 20px">
+          <img src="assets/face.jpg" alt="" /></div
+      ></a>
+    </div>
+  </div>
+  <div class="website-wrapper" id="website-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+</div>

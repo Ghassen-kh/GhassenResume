@@ -1,0 +1,28 @@
+.mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+
+.activity-global-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.activity-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.activity-global-container {
+  height: 100%;
+  z-index: 5000;
+}
+.activity-header {
+  color: rgb(4, 165, 4);
+  font-family: Georgia, serif;
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  font-weight: 600;
+}

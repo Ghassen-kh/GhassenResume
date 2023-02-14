@@ -1,0 +1,65 @@
+<div
+  class="about-container"
+  style="width: 100%; height: 100%; position: relative"
+>
+  <div
+    *ngFor="let personnality of personnalityDescTop"
+    class="personality-desc"
+    [ngStyle]="{
+      'right.%': personnality.progress,
+      'top.%': 5,
+      color: 'rgb(168, 236, 168)'
+    }"
+  >
+    {{ personnality.desc }}
+  </div>
+  <div
+    *ngFor="let personnality of personnalityDescBottom"
+    class="personality-desc"
+    [ngStyle]="{
+      'right.%': personnality.progress,
+      'top.%': 75,
+      color: 'rgb(168, 236, 168)'
+    }"
+  >
+    {{ personnality.desc }}
+  </div>
+  <div
+    *ngFor="let personnality of personnalityDescLeft"
+    class="personality-desc"
+    [ngStyle]="{
+      'top.%': personnality.progress,
+      'right.%': 80,
+      color: 'rgb(168, 236, 168)'
+    }"
+  >
+    {{ personnality.desc }}
+  </div>
+  <div
+    *ngFor="let personnality of personnalityDescRight"
+    class="personality-desc"
+    [ngStyle]="{
+      'top.%': personnality.progress,
+      'right.%': 10,
+      color: 'rgb(168, 236, 168)'
+    }"
+  >
+    {{ personnality.desc }}
+  </div>
+  <div class="about-me-container" id="about-me-container">
+    <mat-card class="about-me-card">
+      <div>
+        I'm <span class="about-me-name"> Ghassen Khalouaoui</span>, Actually I m
+        working as a web development engineer with nearly two years of
+        experience. I help you in the design, architering and the development
+        process of web applications with respect of code quality ,efficiency
+        standards, and customer satisfaction as well. My main experience is in
+        Angular (Front End) and .Net (Back End) A lot of clients have procured
+        exceptional results while working with me and my colleagues. My main
+        task is to continuously deliver fancy interfaces. I also work with
+        others to coordinate and ensure product quality standards are met
+        regularly while maintaining good communication.
+      </div>
+    </mat-card>
+  </div>
+</div>

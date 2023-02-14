@@ -1,0 +1,54 @@
+.activity-container:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/group.jpg");
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+.activity-container {
+  position: relative;
+  height: 100%;
+}
+
+.activity-desc {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(73, 131, 131);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px rgb(4, 31, 80);
+  font-family: cursive;
+  font-size: small;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chem-container {
+  background-image: url("../../assets/aerobotix.png");
+  background-size: cover;
+}
+
+.jei-container {
+  background-image: url("../../assets/junior.png");
+  background-size: cover;
+}
+
+.aeroday-container {
+  background-image: url("../../assets/aeroday.jpg");
+  background-size: cover;
+}
+
+.four-c-container {
+  background-image: url("../../assets/biat-foundation.png");
+  background-size: cover;
+}

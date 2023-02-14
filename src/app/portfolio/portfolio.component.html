@@ -1,0 +1,46 @@
+<div class="portfolio-container">
+  <div class="window-container">
+    <div
+      style="color: white"
+      (click)="backwardClick()"
+      [ngStyle]="{ visibility: achievementStep == 0 ? 'hidden' : 'visible' }"
+    >
+      <mat-icon style="cursor: pointer">fast_rewind</mat-icon>
+    </div>
+
+    <div
+      class="window-content; background: rgb(2, 58, 77, 0.4);"
+      style="position: relative"
+    >
+      <div *ngIf="achievementStep == 0" class="achievement-desc">
+        Welcome at my achievements <br />
+        Click forward to see them all
+      </div>
+      <div *ngIf="achievementStep == 1" class="achievement-desc">
+        Achievement example 1
+      </div>
+      <div *ngIf="achievementStep == 2" class="achievement-desc">
+        Achievement example 2
+      </div>
+      <div *ngIf="achievementStep == 3" class="achievement-desc">
+        Achievement example 3
+      </div>
+      <div *ngIf="achievementStep == 4" class="achievement-desc">
+        Achievement example 4
+      </div>
+      <div
+        class="button-container"
+        *ngIf="achievementStep != 0"
+        (click)="openDialog()"
+      >
+        <button mat-raised-button color="primary">View certificate</button>
+      </div>
+    </div>
+
+    <div style="color: white" (click)="forwardClick()">
+      <div>
+        <mat-icon style="cursor: pointer"> fast_forward</mat-icon>
+      </div>
+    </div>
+  </div>
+</div>

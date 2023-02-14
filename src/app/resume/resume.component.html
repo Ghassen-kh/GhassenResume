@@ -1,0 +1,111 @@
+<div class="resume-container" style="width: 100%; height: 100%">
+  <div class="skills-container">
+    <div class="skills-details-container">
+      <div class="skills-header">
+        <mat-icon style="padding-right: 15px">language</mat-icon>
+        <span style="font-size: medium; font-weight: 600">Languages</span>
+      </div>
+
+      <div style="height: 100%; padding-left: 20px">
+        <div style="display: flex; gap: 5px; margin-bottom: 5px">
+          <span class="sub-header">&#x2022;&nbsp;Arabic: </span>
+          <span class="sub-sub-header"> native language</span>
+        </div>
+        <div style="display: flex; gap: 5px; margin-bottom: 5px">
+          <span class="sub-header">&#x2022;&nbsp;Frensh: </span>
+          <span class="sub-sub-header"> intermediate level</span>
+        </div>
+        <div style="display: flex; gap: 5px; margin-bottom: 5px">
+          <span class="sub-header">&#x2022;&nbsp;English: </span>
+          <span class="sub-sub-header"> Upper intermediate 3 level</span>
+        </div>
+        <div style="padding: 10px 0 0 20px">
+          <span class="sub-sub-header">Training:</span>
+          <span class="sub-sub-header">
+            Upper-Intermediate 3 General English (British Council Tunis)
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="skills-details-container">
+      <div class="skills-header">
+        <mat-icon style="padding-right: 15px">computer</mat-icon>
+        <span style="font-size: medium; font-weight: 600">Computer </span>
+      </div>
+      <div style="height: 100%; padding-left: 20px">
+        <div style="display: flex; gap: 5px">
+          <span class="sub-header">&#x2022;&nbsp;Package Office </span>
+        </div>
+        <div style="display: flex; gap: 5px">
+          <span class="sub-header">&#x2022;&nbsp;QUALIPRO </span>
+        </div>
+
+        <div style="padding: 10px 0 0 20px">
+          <span class="sub-sub-header">Modules:</span>
+          <span class="sub-sub-header">
+            documentation, Action, Audit, Fournisseurs, PNC, Métrologie, GRH,
+            Réunion, indicateur)
+          </span>
+        </div>
+      </div>
+    </div> -->
+    <div class="skills-details-container">
+      <div class="skills-header">
+        <mat-icon style="padding-right: 15px">check_circle_outline</mat-icon>
+        <span style="font-size: medium; font-weight: 600">Skills</span>
+      </div>
+      <div style="height: 100%; padding-left: 20px">
+        <div
+          style="display: flex; gap: 5px; align-items: center; margin-top: 5px"
+          *ngFor="let skill of skills"
+        >
+          &#x2022;&nbsp;
+          <span
+            style="border: solid #022a38 1px; border-radius: 4px; padding: 5px"
+            class="sub-sub-header"
+            >{{ skill }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="activity-container">
+    <resume-activity
+      style="height: 100%"
+      (intershipExpandedEvent)="onInternshipExpanded($event)"
+      (experienceExpandedEvent)="onExperienceExpanded($event)"
+      (diplomaExpandedEvent)="onDiplomaExpanded($event)"
+      (trainingExpandedEvent)="onTrainingExpanded($event)"
+    ></resume-activity>
+    <div
+      class="quote-example"
+      [ngStyle]="{ visibility: internshipExpanded ? 'hidden' : 'visible' }"
+      style="top: 20%; right: 10%"
+    >
+      “Anyone who has never made a mistake has never tried anything new.” ―
+      Albert Einstein
+    </div>
+    <div
+      class="quote-example"
+      [ngStyle]="{ visibility: experienceExpanded ? 'hidden' : 'visible' }"
+      style="top: 20%; right: 60%"
+    >
+      “The only source of knowledge is experience.” ― Albert Einstein
+    </div>
+    <div
+      class="quote-example"
+      [ngStyle]="{ visibility: diplomaExpanded ? 'hidden' : 'visible' }"
+      style="top: 70%; right: 60%"
+    >
+      “The only thing that interferes with my learning is my education.” ―
+      Albert Einstein
+    </div>
+    <div
+      class="quote-example"
+      [ngStyle]="{ visibility: trainingExpanded ? 'hidden' : 'visible' }"
+      style="top: 70%; right: 10%"
+    >
+      “any fool can know. the point is to understand. ” ― Albert Einstein
+    </div>
+  </div>
+</div>
