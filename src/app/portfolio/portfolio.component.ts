@@ -17,7 +17,7 @@ export class PortfolioComponent implements OnInit {
 
   forwardClick() {
     this.achievementStep += 1;
-    if (this.achievementStep == 5) this.achievementStep = 0;
+    if (this.achievementStep == 13) this.achievementStep = 0;
     this.detectChanges();
   }
   backwardClick() {

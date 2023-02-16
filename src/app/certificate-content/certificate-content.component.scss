@@ -1,4 +1,4 @@
-.achievement-one-container:before {
+.achievement-container:before {
   content: " ";
   display: block;
   position: absolute;
@@ -6,12 +6,50 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/CERT.png");
   opacity: 0.9;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.achievement-one-container {
+.achievement-1:before {
+  background-image: url("../../assets/upper_intermediate_3.jpg");
+}
+.achievement-2:before {
+  background-image: url("../../assets/leaders.jpeg");
+}
+.achievement-3:before {
+  background-image: url("../../assets/coaching.jpg");
+}
+.achievement-4:before {
+  background-image: url("../../assets/amideast.jpeg");
+}
+.achievement-5:before {
+  background-image: url("../../assets/praticien.jpg");
+}
+.achievement-6:before {
+  background-image: url("../../assets/agile.jpeg");
+}
+.achievement-7:before {
+  background-image: url("../../assets/opencv.png");
+}
+.achievement-8:before {
+  background-image: url("../../assets/docker.png");
+}
+.achievement-9:before {
+  background-image: url("../../assets/web.png");
+}
+.achievement-10:before {
+  background-image: url("../../assets/c++.jpg");
+}
+.achievement-11:before {
+  background-image: url("../../assets/biat.jpg");
+}
+.achievement-12:before {
+  background-image: url("../../assets/biat.jpg");
+}
+.achievement-13:before {
+  background-image: url("../../assets/biat.jpg");
+}
+.achievement-container {
   position: relative;
   height: 90%;
 }

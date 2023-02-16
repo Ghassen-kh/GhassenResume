@@ -11,5 +11,21 @@
   >
     {{ certificate }}
   </div>
-  <div class="achievement-one-container"></div>
+  <div
+    [ngClass]="{
+      'achievement-1': data.step === 1,
+      'achievement-2': data.step === 2,
+      'achievement-3': data.step === 3,
+      'achievement-4': data.step === 4,
+      'achievement-5': data.step === 5,
+      'achievement-6': data.step === 6,
+      'achievement-7': data.step === 7,
+      'achievement-8': data.step === 8,
+      'achievement-9': data.step === 9,
+      'achievement-10': data.step === 10,
+      'achievement-11': data.step === 11,
+      'achievement-12': data.step === 12
+    }"
+    class="achievement-container"
+  ></div>
 </div>
